@@ -8,6 +8,7 @@ use App\Models\Member;
 class MemberController extends Controller
 {
     public function display(){
+        return view('display')->with('members', Member::orderByDesc('created_at')->get());
 
     }
 

@@ -15,9 +15,7 @@ use App\Http\Controllers\TrainerController;
 |
 */
 
-Route::get('/', function () {
-    return view('display');
-})->name('display');
+Route::get('/',[MemberController::class,'display'])->name('display');
 
 Route::get('/update', function () {
     return view('update');
