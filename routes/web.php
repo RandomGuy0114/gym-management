@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\TrainerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,4 @@ Route::get('/create_trainer', function () {
 })->name('create_trainer');
 
 Route::POST('/create_member', [MemberController::class, 'create'])->name('add_member');
+Route::POST('/create_trainer', [TrainerController::class, 'create'])->name('add_trainer');
