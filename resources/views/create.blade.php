@@ -1,4 +1,5 @@
 @extends('layout')
 @section('content')
-<p>hello create</p>
+    @include('create_member_trainer.tabs')
+    @yield('member')
 @endsection

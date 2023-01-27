@@ -9,10 +9,11 @@ class Trainer extends Model
 {
     use HasFactory;
 
-    protected $fillable=[
+    protected $table='trainers';
+    protected $fillable = [
         'name',
         'email',
         'specialization',
         'phone'
-    ]
+    ];
 }
